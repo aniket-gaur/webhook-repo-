@@ -22,7 +22,8 @@ def webhook():
     formatted_time = timestamp.strftime('%d %B %Y - %I:%M %p IST')
 
     doc = {
-    'timestamp': timestamp
+    'timestamp': timestamp,
+    'display_time': formatted_time
     }
 
 
@@ -69,7 +70,7 @@ def get_events():
     events = list(events_collection.find().sort('timestamp', -1).limit(10))
     for e in events:
         e['_id'] = str(e['_id'])
-        e['timestamp'] = e['timestamp']
+        e['timestamp'] = e.get('display_time', e['timestamp'])
 
     return jsonify(events)
 
