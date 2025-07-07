@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+.env/
+.venv/
+ENV/
+
+# dotenv environment files
+.env
+
+# Flask cache / session files
+instance/
+*.db
+*.sqlite3
+
+# Pytest cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# VS Code / IDE configs
+.vscode/
+.idea/
+
+# MacOS & Linux
+.DS_Store
+*.swp
+
+# Logs
+*.log
+
+# Node-related (if using frontend tools like npm/yarn)
+node_modules/
+dist/
+build/
+
+# Compiled frontend
+/static/js/*.js
+/static/css/*.css
