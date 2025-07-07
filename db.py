@@ -12,5 +12,5 @@ try:
      print("✅ MongoDB connection successful!")
 
 except ConnectionFailure as e:
-    print("❌ MongoDB connection failed:", e)
+    print(" MongoDB connection failed:", e)
 

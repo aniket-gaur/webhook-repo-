@@ -21,5 +21,6 @@ async function fetchEvents() {
   });
 }
 
+//func to fetch events every 15 seconds
 fetchEvents();
 setInterval(fetchEvents, 15000);
